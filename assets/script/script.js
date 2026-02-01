@@ -39,8 +39,7 @@ $(document).ready(function () {
 
     // emailjs to mail contact form data
     $("#contact-form").submit(function (event) {
-        event.preventDefault(); // Moved to the top for immediate effect
-        
+        event.preventDefault();
         emailjs.init("81FSOh9XYopeOdxvq");
 
         emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
@@ -71,7 +70,7 @@ document.addEventListener('visibilitychange',
 
 // typed js effect starts
 var typed = new Typed(".typing-text", {
-    strings: ["Google Cloud Skill Development", "Googling", "Web Development"],
+    strings: ["Python Programming", "Web Development", "Google Cloud Skill Development", "Googling"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
