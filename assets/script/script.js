@@ -34,7 +34,7 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top,
-        }, 500, 'linear')
+        }, 500, 'linear');
     });
 
     // emailjs to mail contact form data
@@ -55,22 +55,24 @@ $(document).ready(function () {
 
 });
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Harshith P";
-            $("#favicon").attr("href", "assets/images/favicon.png");
-        }
-        else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
-        }
-    });
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === "visible") {
+        document.title = "Portfolio | Harshith P";
+        $("#favicon").attr("href", "assets/images/favicon.png");
+    } else {
+        document.title = "Come Back To Portfolio";
+        $("#favicon").attr("href", "assets/images/favhand.png");
+    }
+});
 
 
 // typed js effect starts
 var typed = new Typed(".typing-text", {
-    strings: ["Python Programming", "Web Development", "Google Cloud Skill Development", "Googling"],
+    strings: [
+        "Python Programming",
+        "Google Cloud Skill Development",
+        "Googling"
+    ],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
